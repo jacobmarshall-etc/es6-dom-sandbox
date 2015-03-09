@@ -15,7 +15,7 @@ gulp.task('js', function () {
                     next(null, file);
                 });
         }))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./dist'));
 });
 
