@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .foo {
+            display: inline-block;
+            position: absolute;
+            background: rgba(0, 0, 0, .75);
+            padding: 20px;
+            border-radius: 4px;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #f8f8f8;
+        }
+        .foo.active {
+            will-change: transform;
+        }
+    </style>
+</head>
+<body>
+    <div class="foo" data-type="position">
+        Hello World (position)
+    </div>
+    <div class="foo" data-type="transform">
+        Hello World (transform)
+    </div>
+    <script src="../dist/main.js"></script>
+</body>
+</html>
